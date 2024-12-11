@@ -6,6 +6,71 @@
     <title>Paiement</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a> | <a href="paiement.html">Paiement</a>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h1>Formulaire de paiement</h1>
+            <p>Les champs obligatoires sont suivis par un <strong>*</strong>.</p>
+        </header>
+        <form action="" method="post">
+            <section>
+                <h2>Informations de contact</h2>
+                <fieldset>
+                    <legend>Qualité</legend>
+                    <ul>
+                        <li>
+                            <label for="monsieur">
+                                <input type="radio" name="qualite" id="monsieur"> Monsieur
+                            </label>
+                        </li>
+                        <li>
+                            <label for="madame">
+                                <input type="radio" name="qualite" id="madame">  Madame
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <p>
+                    <label for="nom">Nom:<strong>*</strong></label>
+                    <input type="text" id="nom" name="nom">
+                </p>
+                <p>
+                    <label for="nom">E-mail :<strong>*</strong></label>
+                    <input type="email" id="email" name="email">
+                </p>
+                <p>
+                    <label for="pwd">Mot de passe:<strong>*</strong></label>
+                    <input type="password" id="pwd" name="pwd">
+                </p>
+            </section>
+            <section>
+                <h2>Informations de paiement</h2>
+                <p>
+                    <label for="carte1">Type de carte : <strong>*</strong></label>
+                    <select name="carte1" id="carte1">
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="american express">American Express</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="carte2">Numéro de carte :<strong>*</strong></label>
+                    <input type="text" id="carte2" name="carte2">
+                </p>
+                <p>
+                    <label for="carte3">Date d'expiration :<strong>*</strong></label>
+                    <input type="month" id="carte3" name="carte3">
+                </p>
+            </section>
+            <div>
+                <input type="submit" value="Valider le paiement">
+            </div>
+        </form>
+    </main>
 </body>
 </html>
