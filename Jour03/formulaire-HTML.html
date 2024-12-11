@@ -7,9 +7,134 @@
 </head>
 <body>
     <h1>Mon premier formulaire HTML</h1>
-    <form action="/ma-page-de-traitement" method="post">
+    <form action="" method="post">
         <p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/input">🎯l'élément de saisie dans un formulaire</a></p><br>
-        
+
+        <p>
+          <label for="nom">Nom:</label>
+          <input type="text" id="nom" name="nom">
+        </p>
+        <p>
+            <label for="pwd">Mot de passe:</label>
+            <input type="password" id="pwd" name="pwd">
+        </p>
+        <p>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email">
+        </p>
+        <fieldset>
+            <legend>Choose your favorite Web language:</legend>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </fieldset><br>
+        <fieldset>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+        </fieldset><br>
+        <p>
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+        </p>
+        <p>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+        </p>
+        <p>
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        </p>
+        <p>
+            <input type="image" src="img/code.jpg" alt="code" width="48" height="48">
+        </p>
+        <p>
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+        </p>
+        <p>
+            <label for="bdaymonth">Birthday (month and year):</label>
+            <input type="month" id="bdaymonth" name="bdaymonth">
+        </p>
+        <p>
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+        </p>
+        <p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+        </p>
+        <p>
+            <label for="vol">Volume (between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="0" max="50">
+        </p>
+        <p>
+            <label for="gsearch">Search Google:</label>
+            <input type="search" id="gsearch" name="gsearch">
+        </p>
+        <p>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" >
+        </p>
+        <p>
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt">
+        </p>
+        <p>
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" id="homepage" name="homepage">
+        </p>
+        <p>
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week">
+        </p>
+        <p>
+            <textarea cols="30" rows="8"></textarea>
+        </p>
+        <p>
+            <select id="simple" name="simple">
+                <option>Banane</option>
+                <option selected>Cerise</option>
+                <option>Citron</option>
+            </select>
+        </p>
+        <p>
+            <select id="groups" name="groups">
+                <optgroup label="fruits">
+                  <option>Banane</option>
+                  <option>Cerise</option>
+                  <option>Citron</option>
+                </optgroup>
+                <optgroup label="legumes">
+                  <option>Carotte</option>
+                  <option>Aubergine</option>
+                  <option>Pomme de terre</option>
+                </optgroup>
+            </select> 
+        </p>
+        <label for="browser">Choisissez un navigateur :</label>
+        <input list="browsers" id="browser" name="browser" placeholder="Tapez ici...">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+            <option value="Opera">
+        </datalist>
+        <br>
+        <br>
+        <p>
+            <progress max="100" value="50">50/100</progress>
+        </p>
+        <div>
+            <input type="submit" value="Submit"> | <input type="reset" value="Reset">
+        </div>
       </form>
 </body>
 </html>
