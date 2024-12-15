@@ -6,6 +6,28 @@
     <title>Jour 06 - Formulaire de contact</title>
 </head>
 <body>
-    
+    <img src="img/contact-us.jpg" alt="contact-us" width="100%" height="500">
+    <h2>Contactez-nous</h2>
+    <form action="">
+        <label for="nom">Nom complet:</label>
+        <input type="text" id="nom" placeholder="Votre nom complet" required><br><br>
+        <label for="email">Adresse e-mail:</label>
+        <input type="email" required placeholder="Votre adresse e-mail" id="email"><br><br>
+        <label for="subject">Sujet:</label>
+        <input type="text" id="subject" placeholder="Sujet"><br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Votre message" cols="50" rows="10" required></textarea><br><br>
+        <label for="categorie">Catégorie:</label>
+        <select id="categorie" required>
+            <option value="" disabled selected>Choisissez une catégorie</option>
+            <option value="">Support technique</option>
+            <option value="">Question générale</option>
+            <option value="">Feedback</option>
+        </select> <br><br>
+        <label for="pieces">Pièces jointe</label>
+        <input type="file" name="" id="pieces"> <br><br>
+        <label for="consentement"> <input type="checkbox" id="consentement" required> En cochant cette case, vous acceptez que votre message soit envoyé.</label> <br><br>
+        <input type="submit" value="Envoyer">
+    </form>
 </body>
 </html>
