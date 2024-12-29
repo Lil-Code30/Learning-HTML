@@ -2,6 +2,7 @@
 
 Bienvenue dans mon dépôt GitHub pour un plan d'apprentissage intensif d'HTML en 7 jours ! Ce document détaille un programme structuré pour maîtriser les bases d'HTML et appliquer les connaissances dans des projets pratiques.
 - [HTML Planner Template](https://gainful-buzzard-228.notion.site/HTML-PLAN-157da4bed7cc806b98becdc417243ef1), Télécharger gratuitement
+- [Regarder la vidéo sur YouTube](https://youtu.be/gmDHF_OS1s4?si=SIsZfgdqNJRMHXh3)
 ---
 
 ## 📅 Programme d’apprentissage
